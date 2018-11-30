@@ -5,7 +5,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
   <changeSet id="001" author="Haroon">
     <sql>
-      ALTER TABLE product ADD COLUMN city VARCHAR(5);
+      ALTER TABLE product ADD COLUMN city2 VARCHAR(5);
     </sql>
   </changeSet>
 </databaseChangeLog>
