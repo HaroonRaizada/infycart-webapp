@@ -5,7 +5,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
   <changeSet id="000" author="Haroon">
     <sql>
-      ALTER TABLE product ADD COLUMN addressline1 VARCHAR(1024);
+      ALTER TABLE product ADD COLUMN addressline2 VARCHAR(1024);
     </sql>
   </changeSet>
 </databaseChangeLog>
