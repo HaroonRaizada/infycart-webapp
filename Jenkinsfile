@@ -31,13 +31,13 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        bat "echo y | pscp -i /C:/Users/haroon_raizada/Downloads/tomcat-demo.pem /C:/Users/haroon_raizada/.jenkins/workspace/FullyAutomated/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
+                        bat "echo y | pscp -i C:/Users/haroon_raizada/Downloads/tomcat-demo.pem C:/Users/haroon_raizada/.jenkins/workspace/FullyAutomated/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
                     }
                 }
  
                 stage ("Deploy to Production"){
                     steps {
-                        bat "echo y | pscp -i /C:/Users/haroon_raizada/Downloads/tomcat-demo.pem /C:/Users/haroon_raizada/.jenkins/workspace/FullyAutomated/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat7/webapps"
+                        bat "echo y | pscp -i C:/Users/haroon_raizada/Downloads/tomcat-demo.pem C:/Users/haroon_raizada/.jenkins/workspace/FullyAutomated/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat7/webapps"
                     }
                 }
             }
